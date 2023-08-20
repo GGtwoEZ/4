@@ -133,7 +133,7 @@ body {
     display: inline-block;
     width: 50px; /* Adjust the button width */
     height: 50px; /* Adjust the button height */
-    background: url('../9Gachav2/playbutton.png') no-repeat center center;
+    background: url('../4/4/9Gachav2/PlayButton.png') no-repeat center center;
     background-size: cover;
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smooth cubic-bezier timing function */
     border: none; /* Remove border */
