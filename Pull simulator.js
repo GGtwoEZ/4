@@ -62,6 +62,9 @@ summonButton.addEventListener('click', () => {
             }
         }
     }
+            }
+        }
+    }
     // Increment the click count by 10
     clickCount += 10;
 
