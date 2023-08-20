@@ -1,0 +1,152 @@
+/* 3-star rarity */
+.three-star {
+    color: blue;
+}
+
+/* 4-star rarity */
+.four-star {
+    color: purple;
+}
+
+/* 5-star rarity */
+.five-star {
+    color: gold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+.container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+   }
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(215, 250, 252, 0.507); /* Semi-transparent white */;
+    backdrop-filter: blur(1px);/* 1px blur */
+    max-width: 300px;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    animation: shimmer 8s infinite;
+}
+
+.sbtag {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: rgba(215, 250, 252, 0.507); /* Semi-transparent white */;
+    backdrop-filter: blur(1px);/* 1px blur */
+    max-width: 500px;
+    position: relative;
+    animation: shimmer 8s infinite;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-style: oblique;
+    animation: textAnimation 8s infinite;
+}
+
+@keyframes textAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+    0%, 100% {
+      color: #ff0000; /* Original color */
+    }
+    50% {
+      color: #360bf5; /* New color */
+    }
+  }
+
+.pitybox {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: rgba(215, 250, 252, 0.507); /* Semi-transparent white */;
+    backdrop-filter: blur(1px);/* 1px blur */
+    max-width: 300px;
+    position: relative;
+    animation: shimmer 8s infinite;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+@keyframes shimmer {
+    0%, 100%{
+      background-color: rgba(184, 228, 235, 0.525);
+    }
+    25% {
+      background-color: rgba(224, 248, 246, 0.342);
+    }
+    50% {
+      background-color: rgba(213, 241, 249, 0.598);
+    }
+    75% {
+      background-color: rgba(249, 249, 249, 0.555);
+    }
+  }
+
+.result img {
+    max-width: 50px; /* Adjust the width as needed */
+    height: auto;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#playStopButton {
+    display: inline-block;
+    width: 50px; /* Adjust the button width */
+    height: 50px; /* Adjust the button height */
+    background: url('../9Gachav2/playbutton.png') no-repeat center center;
+    background-size: cover;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smooth cubic-bezier timing function */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    cursor: pointer;
+    /* Positioning */
+    position: absolute;
+    top: 20px; /* Adjust the vertical position */
+    right: 50px; /* Adjust the horizontal position */
+  }
+  
+  #playStopButton:hover {
+   transform: scale(1.1);
+  }
+
+  

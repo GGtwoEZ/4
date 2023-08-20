@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Pull simulator.css">
+    <title>Summon Simulator</title>
+</head>
+<body>
+    <video class="video-background" autoplay muted loop>
+        <source src="../honkai-star-rail-moewalls-com.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <audio autoplay loop id="audio">
+            <source src="../HsrBGmusic.mp3" type="audio/mpeg">
+            </audio>
+            <button id="playStopButton"></button>
+         
+
+        <br><p class="sbtag">Standard Banner</p>
+        <br><p class="pitybox">Pity: <span id="clickCount">0</span></p>
+        <button id="display-one-result">Summon 1x</button>
+      
+        <audio id="clickSound" src="../Clicksound.mp3"></audio>
+
+        <button id="summon-button">Summon 10x</button>
+        
+        <audio id="clickSound" src="../Clicksound.mp3"></audio>
+
+        <div class="result" id="result">
+            <p>Summon a character!</p>
+            <!-- Summon results will be inserted here -->
+        </div>
+    </div>
+    
+    <script src="Pull simulator.js"></script>
+</body>
+</html>
